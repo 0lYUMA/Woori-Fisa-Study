@@ -1,6 +1,6 @@
-# 🐳 Docker Image 관련 실습 및 정리
+# 🐳 Docker Image 최적화
 
-## 📊 Docker Image 최적화
+## 📊 Docker Image 최적화 방법
 ### 1. Minimal Base Images 사용하기  
 
 Alpine Linux를 기반으로 Java 애플리케이션을 Docker 컨테이너에서 실행하였습니다.  
@@ -301,3 +301,9 @@ docker build -t optimized-redis-distroless .
 
 <img src="Redis_After.png" />
 이미지의 크기가 140MB에서 48.2MB로 줄어든 것을 확인할 수 있습니다.
+
+<br>
+
+## 🧐 마무리
+
+앞으로 Docker 이미지를 구성할 때는 다단계 빌드를 적극 활용하여 빌드 환경과 실행 환경을 분리하고, .dockerignore 파일을 사용해 불필요한 파일들이 이미지에 포함되지 않도록 신경 쓰겠습니다. 또한, 경량화된 기본 이미지를 선택하고, 소스 코드와 의존성을 효율적으로 관리하여 이미지 크기를 최소화하며 성능을 최적화하는 방안을 염두에 두겠습니다. 이러한 최적화 방법들을 통해 더 작은 크기이면서도 빠르고 안전한 이미지를 구성하도록 노력하겠습니다.
