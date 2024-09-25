@@ -1,0 +1,5 @@
+# Sample Sensitive Information
+
+API_KEY=12345-ABCDE-67890-FGHIJ
+SECRET_KEY=abcdefg1234567890
+DATABASE_PASSWORD=my_secure_password
